@@ -38,8 +38,8 @@ const UserAccountNav = (props: Props) => {
           <DropdownMenuSeparator />
           <DropdownMenuItem
             className="text-red-600 cursor-pointer"
-            onSelect={() => {
-              signOut();
+            onSelect={async () => {
+              await signOut();
             }}
           >
             Sign out
